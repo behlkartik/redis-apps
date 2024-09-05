@@ -15,7 +15,7 @@ mkdir -pv $HOME/redis-volume/data
 2. Run redis as a docker container with the volume attached:
 
 ```
-docker run -d --name redis-server -p 6379:6379 -v $HOME/db-backups/redis/data:/data redis
+docker run -d --name redis-server -p 6379:6379 -v $HOME/redis-volume/data:/data redis
 ```
 
 - By default redis will be available on localhost and on port 6379. You can check this by connecting to redis via RedisInsights (visually tool) or via redis-cli (I use both).
